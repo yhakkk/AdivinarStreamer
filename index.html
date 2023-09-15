@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el Streamer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/ICON/147216.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-titulo ">
+        <h1 class="title">ADIVINA EL STREAMER</h1>
+        <h3 class="subtitle">¿Quién es este streamer?</h3>
+        <button id="dark-mode-toggle-btn" class="btn">Modo Oscuro</button>
+    </div>
+    <div id="comenzar-boton" class="conteiner-comenzar" style="display: flex;">
+        <button class="btn-comenzar" id="mostrarBoton">Comenzar</button> 
+    </div>
+    <div id="codigo" class="codigo">
+        <div class="container-main" id="main">
+            <div class="image-container" id="foto">
+                <div class="container-troll" id="fototroll"></div>
+                <div class="container-original" id="fotooriginal"></div>
+            </div>
+            <div class="contenedor-botones">
+
+                <button id="anterior" onclick="Volver()" class="btn">Atrás</button>
+                <button id="revelar" onclick="RevelarImagen()" class="btn">Revelar Streamer</button>
+                <button onclick="SumarContador()" id="siguiente" class="btn">Siguiente</button>
+            </div>
+        </div>
+    </div>
+    <script src="./config.js"></script>
+</body>
+</html>
